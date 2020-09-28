@@ -10,4 +10,5 @@
     <color name="pesian_green">#00A896 </color>
     <color name="mountain_meadow">#02c39a</color>
     <color name="pale_spring_bud">#f0f3bd</color>
+    <color name="fail">#ED4E4E</color>
 </resources>
