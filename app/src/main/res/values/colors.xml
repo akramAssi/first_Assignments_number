@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/metallic_seaweed</color>
+    <color name="colorPrimaryDark">@color/blue_sapphire</color>
+    <color name="colorAccent">@color/pesian_green</color>
+
+<!--    color schema -->
+    <color name="blue_sapphire">#05668D</color>
+    <color name="metallic_seaweed">#028090</color>
+    <color name="pesian_green">#00A896 </color>
+    <color name="mountain_meadow">#02c39a</color>
+    <color name="pale_spring_bud">#f0f3bd</color>
+</resources>
