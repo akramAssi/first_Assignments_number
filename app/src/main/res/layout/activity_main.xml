@@ -13,7 +13,8 @@
         android:layout_below="@+id/editTextTextPersonName"
         android:layout_alignParentStart="true"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="56dp" />
+        android:layout_marginTop="56dp"
+        android:background="@drawable/card" />
 
     <RelativeLayout
         android:id="@+id/pal"
@@ -22,7 +23,8 @@
         android:layout_below="@+id/pal0"
         android:layout_alignParentStart="true"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="43dp">
+        android:layout_marginTop="43dp"
+        android:background="@drawable/card">
 
     </RelativeLayout>
 
@@ -51,7 +53,8 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="57dp"
         android:layout_marginEnd="23dp"
-        android:layout_toEndOf="@+id/pal">
+        android:layout_toEndOf="@+id/pal"
+        android:background="@drawable/card">
 
     </RelativeLayout>
 
