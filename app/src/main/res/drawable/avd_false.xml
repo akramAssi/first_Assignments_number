@@ -8,29 +8,30 @@
             android:height="512dp"
             android:viewportWidth="512"
             android:viewportHeight="512">
-            <group android:name="group_3">
+            <group android:name="group">
                 <path
-                    android:name="path_4"
-                    android:pathData="M 149.757 240.221 L 239.48 325.317"
-                    android:fillColor="#fff"
+                    android:name="path_2"
+                    android:pathData="M 86.647 60.332 L 420.858 393.884"
+                    android:fillColor="#ffffff"
+                    android:fillAlpha="0"
                     android:strokeColor="#fff"
-                    android:strokeWidth="27"
+                    android:strokeWidth="75"
                     android:trimPathEnd="0"/>
                 <path
-                    android:name="path_5"
-                    android:pathData="M 394.494 148.346 L 220.225 325.346"
+                    android:name="path_3"
+                    android:pathData="M 420.935 59.751 L 87.887 394.464"
                     android:fillColor="#fff"
+                    android:fillAlpha="0"
                     android:strokeColor="#fff"
-                    android:strokeWidth="27"
-                    android:trimPathStart="1"/>
+                    android:strokeWidth="75"
+                    android:trimPathEnd="0"/>
             </group>
         </vector>
     </aapt:attr>
-    <target android:name="path_4">
+    <target android:name="path_2">
         <aapt:attr name="android:animation">
             <objectAnimator
                 android:propertyName="trimPathEnd"
-                android:startOffset="98"
                 android:duration="500"
                 android:valueFrom="0"
                 android:valueTo="1"
@@ -38,14 +39,14 @@
                 android:interpolator="@android:interpolator/fast_out_slow_in"/>
         </aapt:attr>
     </target>
-    <target android:name="path_5">
+    <target android:name="path_3">
         <aapt:attr name="android:animation">
             <objectAnimator
-                android:propertyName="trimPathStart"
-                android:startOffset="414"
+                android:propertyName="trimPathEnd"
+                android:startOffset="412"
                 android:duration="500"
-                android:valueFrom="1"
-                android:valueTo="0"
+                android:valueFrom="0"
+                android:valueTo="1"
                 android:valueType="floatType"
                 android:interpolator="@android:interpolator/fast_out_slow_in"/>
         </aapt:attr>
