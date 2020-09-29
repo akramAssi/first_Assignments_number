@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">first_Assignments_number</string>
     <string name="number">Number</string>
+    <string name="view1">Palindrome</string>
+    <string name="view3">Twisted</string>
+    <string name="view2">Prime</string>
+    <string name="image_correct">image correct</string>
 </resources>
