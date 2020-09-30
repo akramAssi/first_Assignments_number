@@ -7,6 +7,63 @@
     android:elevation="25dp"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="169dp"
+        android:layout_height="157dp"
+        android:layout_below="@+id/prime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toEndOf="@+id/pal"
+        android:background="@drawable/card"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/about_background"
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="23dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/about_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_correct"
+                android:padding="4dp"
+                app:srcCompat="@drawable/about" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="27dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
     <EditText
         android:id="@+id/number"
         android:layout_width="355dp"
@@ -30,6 +87,7 @@
         android:layout_height="157dp"
         android:layout_below="@+id/number"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
         android:layout_marginStart="24dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/card"
