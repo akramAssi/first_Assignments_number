@@ -4,5 +4,14 @@
     <string name="view1">Palindrome</string>
     <string name="view3">Twisted</string>
     <string name="view2">Prime</string>
+    <string name="about">About</string>
     <string name="image_correct">image correct</string>
+    <string name="description_palindrime">An integer is a palindrome if the reverse of that number is equal to the original number
+        such as 1991 .
+    </string>
+    <string name="description_prime">Prime numbers are numbers that have only 2 factors: 1 and themselves example 2,3,7,31,73 .</string>
+    <string name="description_Twisted">A number is said to be twisted prime if it is a prime number and reverse of the number
+        is also a prime number e.g. 73 ,37 ,43 ,34 .</string>
+
+    <string name="link"><u>Github</u></string>
 </resources>
