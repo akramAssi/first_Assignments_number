@@ -1,13 +1,17 @@
 package com.example.first_assignments_number;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -25,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageView palindrome_view;
     private ImageView prime_view;
     private ImageView twisted_view;
+    private RelativeLayout abouts;
+
 
     private AnimatedVectorDrawable versionGreaterThen_23;
     private AnimatedVectorDrawableCompat versionLessThan_24;
@@ -40,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         prime_view = findViewById(R.id.prime_view);
         twisted_view = findViewById(R.id.twisted_view);
         number = (EditText)findViewById(R.id.number);
+        abouts = findViewById(R.id.about);
+
 
         number.addTextChangedListener(new TextWatcher() {
             @Override
@@ -109,7 +117,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        abouts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this , about.class);
+                startActivity(intent);
+            }
+        });
 
+        ActionBar bar =getSupportActionBar();
+//        bar.setHomeButtonEnabled(true);
+        bar.setDisplayHomeAsUpEnabled(true);
+        bar.setHomeAsUpIndicator(R.drawable.ic_home);
+
+
+
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 
     private void startAnimated(ImageView view)
