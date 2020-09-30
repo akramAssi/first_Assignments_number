@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class about extends AppCompatActivity {
 
-    private Button bott;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

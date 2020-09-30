@@ -11,14 +11,11 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.math.BigDecimal;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,11 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageView palindrome_view;
     private ImageView prime_view;
     private ImageView twisted_view;
-    private RelativeLayout abouts;
 
 
-    private AnimatedVectorDrawable versionGreaterThen_23;
-    private AnimatedVectorDrawableCompat versionLessThan_24;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         prime_view = findViewById(R.id.prime_view);
         twisted_view = findViewById(R.id.twisted_view);
         number = (EditText)findViewById(R.id.number);
-        abouts = findViewById(R.id.about);
+        RelativeLayout abouts = findViewById(R.id.about);
 
 
         number.addTextChangedListener(new TextWatcher() {
@@ -145,10 +139,10 @@ public class MainActivity extends AppCompatActivity {
     {
         Drawable ddo = view.getDrawable();
         if (ddo instanceof AnimatedVectorDrawableCompat) {
-            versionLessThan_24 = (AnimatedVectorDrawableCompat) ddo;
+            AnimatedVectorDrawableCompat versionLessThan_24 = (AnimatedVectorDrawableCompat) ddo;
             versionLessThan_24.start();
         } else if (ddo instanceof AnimatedVectorDrawable) {
-            versionGreaterThen_23 = (AnimatedVectorDrawable) ddo;
+            AnimatedVectorDrawable versionGreaterThen_23 = (AnimatedVectorDrawable) ddo;
             versionGreaterThen_23.start();
         }///end else if
     }
